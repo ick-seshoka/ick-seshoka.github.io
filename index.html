@@ -189,4 +189,55 @@
     <!-- Java Script -->
     <script type="text/javascript" src="./scripts/JQuery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./scripts/responsiveJS/responsiveJS.min.js"></script>
+    <script type="text/javascript">
+        
+        /*
+            script used to open and close the mobile menu when the trigger is clicked
+        */
+        
+        $("a#mobile-menu-trigger").on('click',function(){
+            console.log("mobile menu bar togle pressed");
+            
+            var mobile_menu_container = document.getElementById("mobile-menu-container");
+            var mobile_menu = document.getElementById("mobile-menu");
+            var mobile_menu_height = null;
+            
+            /*
+                computed style used by newer browsers
+            */
+            if(typeof getComputedStyle !== "undefined"){
+                console.log("true");
+                mobile_menu_height = window.getComputedStyle(mobile_menu,null).getPropertyValue("height");
+            }else{
+            /*
+                computed style used by older browsers (legacy IE)
+            */
+                console.log("false");
+                mobile_menu_height = mobile_menu.currentStyle["height"];
+            }
+            
+            console.log("height: "+mobile_menu_height);
+            
+            /*
+                opening mobile menu when it is closed
+            */
+            if(mobile_menu_height === "0px"){
+                mobile_menu_container.style.display = "block";
+                mobile_menu_container.style.height = "250px";
+                mobile_menu_container.style.borderBottom = "3px solid rgba(0,0,0,0.3)";
+                mobile_menu.style.height = "250px";
+                
+            }else{
+                /*
+                    close mobile menu when its open
+                */
+                mobile_menu_container.style.display = "none";
+                mobile_menu_container.style.height = "0px";
+                mobile_menu_container.style.borderBottom = "none";
+                mobile_menu.style.height = "0px";
+            }
+            
+        });
+        
+    </script>
 </html>
