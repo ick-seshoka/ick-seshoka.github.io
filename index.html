@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="./css/responsive_stylesheet/responsive.css" />
         <link rel="stylesheet"  href="./css/index_stylesheet.css" />
+        <link rel="stylesheet" href="./css/modal_window_stylesheet.css" />
     
         <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -82,7 +83,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#"  data-toggle="modal" data-target="#contact-me-modal">
                                     <span class="nav-active-element-icon inactive">
                                         <img src="./images/icon-contact-active.png" alt="icon-contact-active" /> 
                                     </span>
@@ -132,7 +133,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="" data-toggle="modal" data-target="#contact-me-modal">
                             <span class="indicator-mobile-menu"></span>
                             <span class="big-text">contact me</span>
                             <span class="nav-element-icon-mobile pull-right">
@@ -143,6 +144,51 @@
                 </ul>
             </nav>
         </section>
+                <!----------------------------------- Contact Me Modal  ----------------------------------------------->
+        <div class="modal fade" id="contact-me-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Contact Me</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="input-name" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="input-name" placeholder="Your Name">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-email" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="input-email" placeholder="Your Email Address">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-phone-number" class="col-sm-2 control-label">Number</label>
+                                <div class="col-sm-8">
+                                    <input type="tel" class="form-control" id="input-phone-number" placeholder="Your Phone Number">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-message" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-8">
+                                    <textarea id="input-phone-number" class="form-control" cols="30" rows="5" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                 <!----------------------------------- Featured aread  ----------------------------------------------->
         <section id="body">
             <section id="featured-area" class="row">
@@ -342,10 +388,13 @@
                     <div class="container">
                         <div id="hire-me-container" class="col-md-12 col-sm-12">
                             <div class="col-ms-8 col-sm-8">
-                            
-                            </div><div class="col-ms-4 col-sm-4">
+                                
+                            </div>
+                            <div class="col-ms-4 col-sm-4">
                                 <div class="hire-me-btn-container">
-                                    <a class="large-hire-me-btn" href="#">Need A Website? Hire Me</a>
+                                    <a class="large-hire-me-btn" href="#"  data-toggle="modal" data-target="#contact-me-modal">
+                                        Need A Website? Hire Me
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -402,7 +451,7 @@
                                                 <img src="./images/active-page.png" alt="footer-nav-indicator">
                                             </span>
                                         <a class="site-link" href="#">
-                                            About Me  
+                                            My Portfolio 
                                         </a>
                                         <span class="footer-nav-indicator pull-right">
                                                 <img src="./images/footer-nav-indicator.png" alt="footer-nav-indicator">
@@ -413,7 +462,7 @@
                                                 <img src="./images/active-page.png" alt="footer-nav-indicator">
                                             </span>
                                         <a class="site-link" href="#">
-                                            My Protfolio
+                                            About Me
                                         </a>
                                         <span class="footer-nav-indicator pull-right">
                                                 <img src="./images/footer-nav-indicator.png" alt="footer-nav-indicator">
