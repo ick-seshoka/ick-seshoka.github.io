@@ -1,0 +1,283 @@
+/* =================== Header =================  */
+
+header {
+    width: 100%;
+    height: 105px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: #363b43;
+    -moz-box-shadow: 0 3px 0px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 0 3px 0px rgba(0, 0, 0, 0.43);
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.43);
+    -webkit-transition: height .2s;
+    -moz-transition: height .2s;
+    transition: height .2s;
+    }
+
+    .hide-small-text {
+        height: 75px;
+    }
+
+.fixed-top {
+    width: 100%;
+    height: 5px;
+    background: #23c1df;
+    background-image: -webkit-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%);
+    background-image: -moz-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%);
+    background-image: -ms-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%);
+    background-image: -o-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%);
+    }
+
+.contaniner {
+    margin-top: 5px;
+    }
+
+.row {
+    margin: 0;
+}
+
+#logo {
+    display: block;
+    position: absolute;
+    top: 28px;
+    width: 290px;
+    height: 44px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    -webkit-transition: top .2s;
+    -moz-transition: top .2s;
+    transition: top .2s;
+    }
+
+.hide-small-text #logo {
+    top: 15px;
+}
+
+#mobile-menu-trigger {
+    visibility: hidden;
+    }
+
+.main-nav {
+    width: 100%;
+    height: 100px;
+    }
+
+.top-nav {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    }
+
+.top-nav li {
+    display: block;
+    width: 21.621621%;
+    height: 100px;
+    margin-right: 1.5%;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    }
+
+.hide-small-text .top-nav li {
+    height: 70px;
+}
+
+a:focus {
+    outline: none;
+    }
+
+.top-nav li a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-decoration: none;
+    }
+
+.top-nav li a span.nav-active-element-icon {
+    display: block;
+    width: 20px;
+    height: 11px;
+    margin-bottom: 8px;
+    position: relative;
+    top: -6px;
+    left: 42%;
+    }
+
+.active {
+    visibility: visible;
+    position: fixed;
+    }
+
+.inactive {
+    visibility: hidden;
+    }
+
+.top-nav li a span.nav-element-icon {
+    display: block;
+    width: 13px;
+    height: 14px;
+    position: relative;
+    left: 43%;
+    top: -2px;
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+    transition: top 0.2s;
+    }
+
+.hide-small-text .top-nav li a span.nav-element-icon {
+    top: -6px;
+}
+
+#nav-active-element-icon-portfolio {
+    left: 40%;
+}
+
+/*
+    common nav element styles
+*/
+.top-nav li a span.big-text, .top-nav li a span.small-text {
+    text-align: center;
+    }
+
+.top-nav li a span.big-text {
+    display: block;
+    position: relative;
+    top: 5px;
+    color: #f3eeee;
+    -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    -ms-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    -o-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+    transition: top 0.2s;
+    }
+
+.hide-small-text .top-nav li a span.big-text {
+    top: 0px;
+}
+
+.top-nav li a span.small-text {
+    display: block;
+    position: relative;
+    top: 5px;
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(202, 202, 202, 0.7);
+    opacity: 1;
+    -moz-transition: top 0.2s ease, color 0.3s ease,opacity 0.2s;
+    -o-transition: top 0.2s ease, color 0.3s ease,opacity 0.2s;
+    -webkit-transition: top 0.2s ease, color 0.3s ease,opacity 0.2s;
+    transition: top 0.2s ease, color 0.3s ease,opacity 0.2s;
+    }
+
+.hide-small-text .top-nav li a span.small-text {
+    opacity: 0;
+}
+
+.top-nav li a:hover span.small-text {
+    top: 2px;
+    color: rgba(225, 225, 225, 1);
+    }
+
+.top-nav li a span.indicator {
+    display: block;
+    position: relative;
+    top: 28px;
+    left: 34%;
+    width: 40px;
+    height: 5px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: rgba(35, 193, 223, 0.8);
+    -moz-transition: opacity 0.5s ease, top 0.35s ease;
+    -o-transition: opacity 0.5s ease, top 0.35s ease;
+    -webkit-transition: opacity 0.5s ease, top 0.35s ease;
+    transition: opacity 0.5s ease, top 0.35s ease;
+    }
+
+.hide-small-text .top-nav li a span.indicator {
+    top: 0;
+}
+
+.top-nav li a:hover span.indicator {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    top: 25px;
+    }
+
+.hide-small-text .top-nav li a:hover span.indicator {
+    top: -5px;
+}
+
+.stroke {
+    width: 100%;
+    height: 1px;
+    position: relative;
+    top: -1px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+    }
+
+/*mobile and tablet menu media query*/
+@media screen and (max-width: 995px) {
+    header {
+        height: 80px;
+        position: static;
+        }
+    #logo {
+        width: 254px;
+        top: 25px;
+        background: url(../images/logo-small.png) no-repeat 0 0;
+        }
+    .main-nav {
+        display: none;
+        }
+    a#mobile-menu-trigger {
+        visibility: visible;
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: 25px;
+        background: url(../images/icon-mobile-menu-trigger.png);
+        background-size: 30px 30px;
+        border-radius: none;
+        }
+    }
+@media screen and (max-width: 480px) {
+    hearder {
+        height: 60px;
+        }
+    
+    #logo {
+        width: 172px;
+        top: 25px;
+        background: url(../images/logo-xsmall.png) no-repeat 0 0
+        }
+    
+    a#mobile-menu-trigger {
+        margin-top: 23px;
+        width: 29px;
+        height: 29px;
+        background: url(../images/icon-mobile-menu-trigger.png);
+        background-size: 29px 29px;
+        }
+    }
