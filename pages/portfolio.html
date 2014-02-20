@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <title>ick | Portfolio</title>
+    
+        <meta name="description" content>
+        <meta name="author" content>
+    
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <link rel="stylesheet" href="../css/responsive_stylesheet/responsive.css" />
+        <link rel="stylesheet"  href="../css/scroll-top.css" />
+        <link rel="stylesheet"  href="../css/header_stylesheet.css" />
+        <link rel="stylesheet"  href="../css/mobile_menu_stylesheet.css" />
+        <link rel="stylesheet"  href="../css/portfolio_stylesheet.css" />
+        <link rel="stylesheet" href="../css/modal_window_stylesheet.css" />
+        <link rel="stylesheet" href="../css/footer_stylesheet.css" />
+    
+        <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> 
+        <![endif]-->
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    </head>
+    <body id="top">
+            <!----------------------------------- Header  ----------------------------------------------->
+        <a class="scroll-top" href="#top">
+            <img src="../images/scroll-top.png" alt="back-to-top">
+        </a>
+        <header id="page-header">            
+            <div class="fixed-top"></div>
+            <div class="container">
+                <div class="row">
+                    <!--------- logo --------------->
+                    <div class="col-md-4 col-sm-4">
+                        <a id="logo" href="../index.html"></a>
+                    </div>
+                    <div class="col-md-6 col-md-offset-2">
+                        <a id="mobile-menu-trigger" class="pull-right" href="#"></a>
+                        <!--------- menu bar --------------->
+                        <nav id="menu-bar" class="main-nav">
+                            <ul class="top-nav">
+                                <li>
+                                    <a href="../index.html">
+                                    <span class="nav-active-element-icon inactive">
+                                        <img src="../images/icon-home-active.png" alt="icon-home-active" />    
+                                    </span>
+                                    <span class="nav-element-icon">
+                                        <img src="../images/icon-home.png" alt="icon-home" /> 
+                                    </span>
+                                    <span class="big-text">Home</span>
+                                    <span class="small-text">homepage</span>
+                                    <span class="indicator"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./portfolio.html">
+                                    <span id="nav-active-element-icon-portfolio" class="nav-active-element-icon active">
+                                        <img src="../images/icon-portfolio-active.png" alt="icon-portfolio-activ" />
+                                    </span>
+                                    <span class="nav-element-icon">
+                                        <img src="../images/icon-portfolio.png" alt="icon-portfolio" />
+                                    </span>
+                                    <span class="big-text">Portfolio</span>
+                                    <span class="small-text">my work</span>
+                                    <span class="indicator"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">
+                                    <span class="nav-active-element-icon inactive">
+                                            <img src="../images/icon-profile-avtive.png" alt="icon-profile-active" />
+                                    </span>
+                                    <span class="nav-element-icon">
+                                        <img src="../images/icon-profile.png" alt="icon-profile" />    
+                                    </span>
+                                    <span class="big-text">About Me</span>
+                                    <span class="small-text">who i am</span>
+                                    <span class="indicator"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"  data-toggle="modal" data-target="#contact-me-modal">
+                                    <span class="nav-active-element-icon inactive">
+                                        <img src="../images/icon-contact-active.png" alt="icon-contact-active" /> 
+                                    </span>
+                                    <span class="nav-element-icon">
+                                        <img src="../images/icon-contact.png" alt="icon-contact" />  
+                                    </span>
+                                    <span class="big-text">Contact Me</span>
+                                    <span class="small-text">get in touch</span>
+                                    <span class="indicator"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+                <!----------------------------------- Mobile Menu bar  ----------------------------------------------->
+        <section id="mobile-menu-container">
+            <nav id="mobile-menu-nav">
+                <ul id="mobile-menu" class="mobile-menu-bar">
+                    <li>
+                        <a href="../index.html">
+                            <span class="big-text">home</span>
+                            <span class="nav-element-icon-mobile pull-right">
+                                <img src="../images/icon-home.png" alt="icon-home" /> 
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html">
+                            <span class="indicator-mobile-menu indicator-mobile-menu-active"></span>
+                            <span class="big-text">portfolio</span>
+                            <span class="nav-element-icon-mobile pull-right">
+                                <img src="../images/icon-portfolio.png" alt="icon-portfolio" />
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            <span class="big-text">about me</span>
+                            <span class="nav-element-icon-mobile pull-right">
+                                <img src="../images/icon-profile.png" alt="icon-profile" />    
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contact-me" href="">
+                            <span class="big-text">contact me</span>
+                            <span class="nav-element-icon-mobile pull-right">
+                                <img src="../images/icon-contact.png" alt="icon-contact" />  
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+                <!----------------------------------- Contact Me Modal  ----------------------------------------------->
+        <!--<div class="modal fade" id="contact-me-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Contact Me</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="input-name" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="input-name" placeholder="Your Name">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-email" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="input-email" placeholder="Your Email Address">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-phone-number" class="col-sm-2 control-label">Number</label>
+                                <div class="col-sm-8">
+                                    <input type="tel" class="form-control" id="input-phone-number" placeholder="Your Phone Number">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-message" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-8">
+                                    <textarea id="input-phone-number" class="form-control" cols="30" rows="5" placeholder="Your Message">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!----------------------------------- title section ----------------------------------------------->
+        <section id="title-section-container">
+            <div class="row">
+                <div class="container">
+                    <h1 class="title">My Portfolio</h1>
+                    <img class="triangle" src="../images/triangle2.png"/>
+                </div>
+            </div>
+        </section>
+        
+        <!----------------------------------- featured area ----------------------------------------------->
+        <section id="featured-area-conainer">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-6 col-sm-6">
+                        <h1>Multi-Device Web 
+                            <br class="visible-lg">Development
+                        </h1>
+                        <h4>Creating websites that look and feel the same 
+                            <br class="visible-lg"/>from one device to another
+                        </h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <img class="img-responsive center-block" src="../images/imac_ipad_iphone.png" alt="imac-ipad-iphone" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!----------------------------------- main section ----------------------------------------------->
+        <section id="main-section">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="media">
+                            <a class="icon pull-left">
+                                <img class="media-object" src="../images/icon-design.png" alt="icon-design" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="main-section-header-block">
+                                    Design
+                                </h4>
+                                <p class="block-paragraph">
+                                    Hackathons are a great place to meet and interact with 
+                                    other creative young developers out there. A 
+                                    great place to learn and apply knowlagde, a 
+                                    place where solutions to complex problems
+                                    are found.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="media">
+                            <a class="icon pull-left">
+                                <img class="media-object" src="../images/icon-implement.png" alt="icon-design" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="main-section-header-block">
+                                    Implement
+                                </h4>
+                                <p class="block-paragraph">
+                                    Hackathons are a great place to meet and interact with 
+                                    other creative young developers out there. A 
+                                    great place to learn and apply knowlagde, a 
+                                    place where solutions to complex problems
+                                    are found.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="media">
+                            <a class="icon pull-left">
+                                <img class="media-object" src="../images/icon-develop.png" alt="icon-design" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="main-section-header-block">
+                                    Develop
+                                </h4>
+                                <p class="block-paragraph">
+                                    Hackathons are a great place to meet and interact with 
+                                    other creative young developers out there. A 
+                                    great place to learn and apply knowlagde, a 
+                                    place where solutions to complex problems
+                                    are found.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------- lower main section ----------------------------------------------->
+        <section id="lower-main-section">
+            <div class="gradient-mask"></div>
+            <div class="row">
+                <div class="section-content container">
+                    <div class="col-md-3 col-sm-3">
+                        <img class="iphone img-responsive center-block" src="../images/iphone.png" alt="iphone" />
+                    </div>
+                    <div class="col-md-7 col-sm-7 col-md-offset-1 col-sm-offset-1 inner-padding">
+                        <div class="media">
+                            <a class="pull-left media-icon">
+                                <img class="media-object center-block" src="../images/media-phone.png" alt="media-phone">
+                            </a>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Mobile Optimized</h4>
+                                <p class="media-paragraph">
+                                    With most of today’s 
+                                    <a href="#"> 
+                                        <span class="icon">
+                                            <img src="../images/homepage_imgs/icon-info.png" alt="icon-info">
+                                        </span>
+                                        web traffic
+                                    </a> coming from mobile devices,
+                                    I make it my first priority to make a web page mobile optimized,
+                                    maintain the same feel and behaviour across all devices.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left media-icon">
+                                <img class="media-object center-block" src="../images/media-browser.png" alt="media-phone">
+                            </a>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Cross Browser Compatible</h4>
+                                <p class="media-paragraph">
+                                    I create web pages that are compatible with all
+                                    <a href="#">
+                                        <span class="icon">
+                                            <img src="../images/homepage_imgs/icon-info.png" alt="icon-info">
+                                        </span>
+                                        major web browsers
+                                    </a>,
+                                    which means the same feel and behaviour of a web page is preserved
+                                    and delivered to all major web browsers. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left media-icon">
+                                <img class="media-object center-block" src="../images/media-design.png" alt="media-phone">
+                            </a>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Sleek Design</h4>
+                                <p class="media-paragraph">
+                                    What good is a mobile optimized and cross browser compatible website
+                                    that does not look good?. With the design skill set I have acquired I create
+                                    clean and sleek web pages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------- footer ----------------------------------------------->
+            
+        <footer id="footer-section">
+            <div class="row">
+                <div class="container reset-padding">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="footer-content-box">
+                            <img class="footer-logo img-responsive center-block" src="../images/footer-logo.png" alt="footer logo" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="footer-content-box">
+                            <h3>Site Links</h3>
+                            <ul class="footer-nav">
+                                <li>
+                                    <span class="active-page inactive">
+                                            <img src="../images/active-page.png" alt="footer-nav-indicator">
+                                        </span>
+                                    <a class="site-link" href="../index.html">
+                                        Home
+                                    </a>
+                                    <span class="footer-nav-indicator pull-right">
+                                            <img src="../images/footer-nav-indicator.png" alt="footer-nav-indicator">
+                                        </span>
+                                </li>
+                                <li>
+                                    <span class="active-page nav-link-active">
+                                            <img src="../images/active-page.png" alt="footer-nav-indicator">
+                                        </span>
+                                    <a class="site-link" href="./portfolio.html">
+                                        My Portfolio 
+                                    </a>
+                                    <span class="footer-nav-indicator pull-right">
+                                            <img src="../images/footer-nav-indicator.png" alt="footer-nav-indicator">
+                                        </span>
+                                </li>
+                                <li>
+                                    <span class="active-page inactive">
+                                            <img src="../images/active-page.png" alt="footer-nav-indicator">
+                                        </span>
+                                    <a class="site-link" href="./about.html">
+                                        About Me
+                                    </a>
+                                    <span class="footer-nav-indicator pull-right">
+                                            <img src="../images/footer-nav-indicator.png" alt="footer-nav-indicator">
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 reset-padding-right">
+                        <div class="footer-content-box">
+                            <h3>Contact Me</h3>
+                            <p>
+                                 Get in touch with me, drop me an email<br class="visible-lg"/>
+                                 or give me a call.
+                            </p>
+                            <div class="col-md-11 col-sm-12 col-md-offset-1 contact-details">
+                                <a href="#">
+                                    <span>
+                                        <img src="../images/icon-email.png" alt="icon-email"/>
+                                    </span>
+                                    ick.seshoka@gmail.com
+                                </a>
+                                <a href="#">
+                                    <span>
+                                        <img src="../images/icon-phone.png" alt="icon-phone"/>
+                                    </span>
+                                    +27 723 050 465
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="footer-content-box">
+                            <h3>Find Me On</h3>
+                            <div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 social-list">
+                                <a class="social-list-item child" href="https://www.facebook.com/ick.seshoka" target="_blank">
+                                    <img class="icon-social" src="../images/fb-dark.png">
+                                </a>
+                                <a class="social-list-item child" href="https://twitter.com/ick_Seshoka" target="_blank">
+                                    <img class="icon-social" src="../images/twtr-dark.png">
+                                </a>
+                                <a class="social-list-item" href="http://instagram.com/ick_seshoka" target="_blank">
+                                    <img class="icon-social" src="../images/inst-dark.png">
+                                </a>
+                                <div class="clearfix visible-xs"></div>
+                                <a class="social-list-item child" href="http://google.com/+isaacSeshoka" target="_blank">
+                                    <img class="icon-social" src="../images/gplus-dark.png">
+                                </a>
+                                <a class="social-list-item child" href="#" target="_blank">
+                                    <img class="icon-social" src="../images/skp-dark.png">
+                                </a>
+                                <a class="social-list-item" href="http://www.youtube.com/channel/UCwQjGBWTNziLLY5B4XPVGoA" target="_blank">
+                                    <img class="icon-social" src="../images/yt-dark.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-no-padding">
+                    <div class="black-line"></div>
+                    <div class="white-line"></div>
+                    <p class="copy-right">&copy; 2014, Designed And Developed by <a>Ick_seshoka</a>, All Rights Reserved.</p>
+                </div>
+                <div class="clearfix"></div>
+                <div id="footer-bottom-line"></div>
+            </div>
+        </footer>
+    </body>
+    
+    <!-- Java Script -->
+    <script type="text/javascript" src="../scripts/JQuery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../scripts/responsiveJS/responsiveJS.min.js"></script>
+    <script type="text/javascript" src="../scripts/scroll-top.js"></script>
+    <script type="text/javascript" src="../scripts/header.js"></script>
+    <script type="text/javascript" src="../scripts/mobile_menu.js"></script>
+    </body>
+</html>
