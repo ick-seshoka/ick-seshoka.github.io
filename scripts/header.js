@@ -1,5 +1,5 @@
 /*
-    script reduces the hight of the header iif the user scrolls 100px down
+    script reduces the hight of the header if the user scrolls 40px down
 */
 
 $(document).ready(function(){
@@ -10,7 +10,7 @@ $(document).ready(function(){
         $(window).scroll(function(){
            //check if user has scrolled 100px down
             
-            if($(this).scrollTop() > 100){
+            if($(this).scrollTop() > 40){
                 //add header class
                 headerElement.addClass("hide-small-text");
             }else{
