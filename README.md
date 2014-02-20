@@ -4,11 +4,11 @@ My open source online portfolio, a cross browser compatible website that’s als
 Created using HTML5, CSS3, Javascript and JQuery.
 
 Link
-====
+----
 The site is live at http://ick-seshoka.github.io/
 
 Directory Structure
-===================
+-------------------
 
     /           -root folder where the index page is    
     /scripts    -holds all javascript files, libraries and plugins
