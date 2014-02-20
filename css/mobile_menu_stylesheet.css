@@ -15,13 +15,19 @@
         border-bottom: 3px solid rgba(0,0,0,0.3);
     }
     
-    #mobille-menu-nav {
+    #mobile-menu {
+        -webkit-transition: opacity 0.6s;
+        transition: opacity 0.6s;
+    }
+    
+    #mobile-menu-nav {
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+        height: auto;
     }
     
     .mobile-menu-bar {
@@ -41,19 +47,16 @@
         padding: 20px 0;
         position: relative;
         top: 50%;
-        font-size: 0.89em;
+        font-size: 12px;
         text-transform: uppercase;
         color: rgba(255,255,255,0.8);
         border-bottom:1px solid rgba(255,255,255,0.3);
-        -webkit-text-shadow: 0px 2px 1px rgba(0,0,0,0.5);
-        -moz-text-shadow: 0px 2px 1px rgba(0,0,0,0.5);
-        -ms-text-shadow: 0px 2px 1px rgba(0,0,0,0.5);
-        -o-text-shadow: 0px 2px 1px rgba(0,0,0,0.5);
-        text-shadow: 0px 2px 1px rgba(0,0,0,0.5);
+        -webkit-text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+        -moz-text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+        -ms-text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+        -o-text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
         -webkit-transition: color 0.3s ease;
-        -moz-transition: color 0.3s ease;
-        -ms-transition: color 0.3s ease;
-        -o-transition: color 0.3s ease;
         transition: color 0.3s ease;
     }
     
@@ -71,9 +74,6 @@
         background: white;
         opacity: 0;
         -webkit-transition: left 0.35s ease,opacity 0.7s ease;
-        -moz-transition: left 0.35s ease,opacity 0.7s ease;
-        -ms-transition: left 0.35s ease,opacity 0.7s ease;
-        -o-transition: left 0.35s ease,opacity 0.7s ease;
         transition: left 0.35s ease,opacity 0.7s ease;
     }
     
@@ -90,5 +90,10 @@
     
     .mobile-menu-bar li a span.big-text {
         margin-left: 30px;
+    }
+    
+    .mobile-menu-bar li a span.nav-element-icon-mobile {
+        position: relative;
+        right: 25px;
     }
 }

@@ -4,10 +4,10 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Ick_Seshoka</title>
+        <title>ick | Home</title>
     
         <meta name="description" content>
-        <meta name="author" content>
+        <meta name="author" content="isaac Seshoka">
     
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
@@ -16,8 +16,12 @@
         <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="./css/responsive_stylesheet/responsive.css" />
         <link rel="stylesheet"  href="./css/index_stylesheet.css" />
+        <link rel="stylesheet"  href="./css/scroll-top.css" />
+        <link rel="stylesheet"  href="./css/header_stylesheet.css" />
+        <link rel="stylesheet"  href="./css/mobile_menu_stylesheet.css" />
         <link rel="stylesheet" href="./css/modal_window_stylesheet.css" />
-    
+        <link rel="stylesheet" href="./css/footer_stylesheet.css" />
+        
         <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -26,11 +30,15 @@
         <![endif]-->
         <!-- Favicons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
-        <link rel="shortcut icon" href="">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     </head>
-    <body>
+    <body id="top">
             <!----------------------------------- Header  ----------------------------------------------->
-        <header>            
+        <a class="scroll-top" href="#top">
+            <img src="./images/scroll-top.png" alt="back-to-top">
+        </a>
+        <header id="page-header">            
             <div class="fixed-top"></div>
             <div class="container">
                 <div class="row">
@@ -44,7 +52,7 @@
                         <nav id="menu-bar" class="main-nav">
                             <ul class="top-nav">
                                 <li>
-                                    <a href="#">
+                                    <a href="./index.html">
                                     <span class="nav-active-element-icon active">
                                         <img src="./images/icon-home-active.png" alt="icon-home-active" />    
                                     </span>
@@ -57,20 +65,20 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./pages/portfolio.html">
                                     <span class="nav-active-element-icon inactive">
                                         <img src="./images/icon-portfolio-active.png" alt="icon-portfolio-activ" />
                                     </span>
                                     <span class="nav-element-icon">
                                         <img src="./images/icon-portfolio.png" alt="icon-portfolio" />
                                     </span>
-                                    <span class="big-text">Profile</span>
+                                    <span class="big-text">Portfolio</span>
                                     <span class="small-text">my work</span>
                                     <span class="indicator"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./pages/about.html">
                                     <span class="nav-active-element-icon inactive">
                                             <img src="./images/icon-profile-avtive.png" alt="icon-profile-active" />
                                     </span>
@@ -103,11 +111,11 @@
         </header>
                 <!----------------------------------- Mobile Menu bar  ----------------------------------------------->
         <section id="mobile-menu-container">
-            <nav id="mobille-menu-nav">
+            <nav id="mobile-menu-nav">
                 <ul id="mobile-menu" class="mobile-menu-bar">
                     <li>
-                        <a href="#">
-                            <span id="active" class="indicator-mobile-menu indicator-mobile-menu-active"></span>
+                        <a href="./index.html">
+                            <span class="indicator-mobile-menu indicator-mobile-menu-active"></span>
                             <span class="big-text">home</span>
                             <span class="nav-element-icon-mobile pull-right">
                                 <img src="./images/icon-home.png" alt="icon-home" /> 
@@ -115,8 +123,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="indicator-mobile-menu"></span>
+                        <a href="./pages/portfolio.html">
                             <span class="big-text">portfolio</span>
                             <span class="nav-element-icon-mobile pull-right">
                                 <img src="./images/icon-portfolio.png" alt="icon-portfolio" />
@@ -124,8 +131,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="indicator-mobile-menu"></span>
+                        <a href="./pages/about.html">
                             <span class="big-text">about me</span>
                             <span class="nav-element-icon-mobile pull-right">
                                 <img src="./images/icon-profile.png" alt="icon-profile" />    
@@ -133,8 +139,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" data-toggle="modal" data-target="#contact-me-modal">
-                            <span class="indicator-mobile-menu"></span>
+                        <a href="">
                             <span class="big-text">contact me</span>
                             <span class="nav-element-icon-mobile pull-right">
                                 <img src="./images/icon-contact.png" alt="icon-contact" />  
@@ -145,6 +150,7 @@
             </nav>
         </section>
                 <!----------------------------------- Contact Me Modal  ----------------------------------------------->
+<!--
         <div class="modal fade" id="contact-me-modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -178,7 +184,8 @@
                             <div class="form-group">
                                 <label for="input-message" class="col-sm-2 control-label">Message</label>
                                 <div class="col-sm-8">
-                                    <textarea id="input-phone-number" class="form-control" cols="30" rows="5" placeholder="Your Message"></textarea>
+                                    <textarea id="input-phone-number" class="form-control" cols="30" rows="5" placeholder="Your Message">
+                                    </textarea>
                                 </div>
                             </div>
                         </form>
@@ -189,6 +196,7 @@
                 </div>
             </div>
         </div>
+-->
                 <!----------------------------------- Featured aread  ----------------------------------------------->
         <section id="body">
             <section id="featured-area" class="row">
@@ -220,10 +228,10 @@
                     
                       <!-- Controls -->
                       <a class="left carousel-control" href="#slider" data-slide="prev">
-                        <img id="slider-left-btn" class="slider-btn img-responsive" src="./images/slider-left-btn.png" />
+                        <img id="slider-left-btn" class="slider-btn img-responsive hidden-xs" src="./images/slider-left-btn.png" />
                       </a>
                       <a  class="right carousel-control" href="##slider" data-slide="next">
-                        <img id="slider-right-btn" class="slider-btn img-responsive" src="./images/slider-right-btn.png" />
+                        <img id="slider-right-btn" class="slider-btn img-responsive hidden-xs" src="./images/slider-right-btn.png" />
                       </a>
                 </div>
             </section>
@@ -231,49 +239,38 @@
             <!----------------------------------- Main Content Section ----------------------------------------------->
             
             <section id="main-content-holder" class="row">
+                <div class="gradient-mask"></div>
                 <div class="container main-content-inner-container">
                     <div id="what-i-do" class="main-content-inner col-md-4 col-sm-4">
                         <img class="center-block scale-down" src="./images/homepage_imgs/pc.png" alt="pc" />
-                        <h3>What i Do</h3>
+                        <h3>What I Do</h3>
                         <h4>Design, Implement, Develop</h4>
-                        <p>i use the latest web technologies, tools <br>
-                            techniques and standards to<br>
-                            create sleek <a href="#">
+                        <p>I use the latest web technologies, tools <br class="visible-lg">
+                            techniques and standards to<br class="visible-md visible-lg">
+                            create sleek <a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">
                                 <span class="icon-download">
                                     <img src="./images/homepage_imgs/icon-info.png" />
                                 </span>
                             responsive websites</a>.
                             <br>
                             <br>
-                            web techniques<br/>
-                            and languages i use include:
+                            Web techniques<br class="visible-lg"/>
+                            and languages I use include:
                         </p>
                         <div class="col-md-12">
                             <div class="web-tech-list-container col-md-4">
                                 <ul class="web-tech-list">
                                     <li>
                                         <span class="circle-indicator"></span>
-                                        <a class="web-tech" href="#">html5</a>
+                                        <a class="web-tech" href="http://en.wikipedia.org/wiki/HTML5" target="_blank">html5</a>
                                     </li>
-                                    <li>
+                                    <li class="visible-lg visible-md">
                                         <span class="circle-indicator"></span>
-                                        <a class="web-tech" href="#">jquery</a>
+                                        <a class="web-tech" href="http://jquery.com/" target="_blank">jquery</a>
                                     </li>
-                                    <li>
+                                    <li class="visible-lg visible-md">
                                         <span class="circle-indicator"></span>
-                                        <a class="web-tech" href="#">mysql</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="web-tech-list-container col-md-4">
-                                <ul class="web-tech-list">
-                                    <li>
-                                        <span class="circle-indicator"></span>
-                                        <a class="web-tech" href="#">css3</a>
-                                    </li>
-                                    <li>
-                                        <span class="circle-indicator"></span>
-                                        <a class="web-tech" href="#">ajax</a>
+                                        <a class="web-tech" href="http://www.mysql.com/" target="_blank">mysql</a>
                                     </li>
                                 </ul>
                             </div>
@@ -281,30 +278,42 @@
                                 <ul class="web-tech-list">
                                     <li>
                                         <span class="circle-indicator"></span>
-                                        <a class="web-tech" href="#">javascript</a>
+                                        <a class="web-tech" href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">css3</a>
                                     </li>
+                                    <li class="visible-lg visible-md">
+                                        <span class="circle-indicator"></span>
+                                        <a class="web-tech" href="http://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">ajax</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="web-tech-list-container col-md-4">
+                                <ul class="web-tech-list">
                                     <li>
                                         <span class="circle-indicator"></span>
-                                        <a class="web-tech" href="#">php</a>
+                                        <a class="web-tech" href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">javascript</a>
+                                    </li>
+                                    <li class="visible-lg visible-md">
+                                        <span class="circle-indicator"></span>
+                                        <a class="web-tech" href="http://php.net/" target="_blank">php</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <a class="read-more pull-right" href="#">+Read More</a>
+                        <a class="read-more pull-right" href="./pages/portfolio.html">+Read More</a>
                     </div>
                     <div id="my-profile" class="main-content-inner col-md-3 col-sm-3">
                         <img class="center-block scale-down" src="./images/homepage_imgs/portfolio.png" alt="portfolio" />
                         <h3>My Portfolio</h3>
                         <h4>My Work</h4>
-                        <p>checkout the design of this
-                            page i created.&nbsp;
-                            <a href="#">
+                        <p>Checkout the design of this
+                            site I developed.&nbsp;
+                            <a href="./assests/my_site-Recovered.psd">
                                 <span class="icon-download">
                                     <img src="./images/homepage_imgs/icon-download-blue.png" />
                                 </span>download</a>
-                            the photoshop file <br/>
-                            of the design <br/>
-                            (<a href="#">
+                            the Photoshop  <br class="visible-lg"/>
+                            file of the design <br class="visible-lg"/>
+                            (<a href="http://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank">
                                 <span class="icon-download">
                                     <img src="./images/homepage_imgs/icon-info.png" />
                                 </span>
@@ -317,7 +326,7 @@
                                 <figcaption>
                                     <h4 class="fgc-header">Design File</h4>
                                     <p class="fgc-paragraph">
-                                        Photoshop design file of this <br/>page.
+                                        Photoshop design file of this <br/>site.
                                     </p>
                                     <a class="fgc-btn" href="#">
                                         <span class="icon-download">
@@ -328,33 +337,34 @@
                                 </figcaption>
                             </figure>
                         </div>
-                        <a id="read-more-my-profile" class="read-more pull-right" href="#">+Read More</a>
+                        <a id="read-more-my-profile" class="read-more pull-right" href="./pages/portfolio.html">+Read More</a>
                     </div>
                     <div id="i-socialize" class="main-content-inner col-md-4 col-sm-4">
                         <img class="center-block scale-down" src="./images/homepage_imgs/socialize.png" alt="socialize" />
                         <h3>I Socialize</h3>
                         <h4>Facebook, Twitter, Instagram</h4>
-                        <p>i am a big fan of social networks, they provide <br/>
-                            quick easy and convient ways to keep in touch <br/>
-                            with friends and family<br/>
+                        <p>I am a big fan of social networks, they provide <br class="visible-lg"/>
+                            quick, easy and convenient ways to keep in touch <br class="visible-lg"/>
+                            with friends and family.
                             <br/>
-                            find me on these popular social networks.
+                            <br/>
+                            Find me on these popular sites.
                         </p>
                         <div class="col-md-12">
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6 mgl-md">
                                 <ul class="socialize-list">
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/ick.seshoka" target="_blank">
                                             <img src="./images/homepage_imgs/fb-me.png" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://twitter.com/ick_Seshoka" target="_blank">
                                             <img src="./images/homepage_imgs/twitter.png" />
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="visible-lg">
+                                        <a href="http://google.com/+isaacSeshoka" target="_blank">
                                             <img src="./images/homepage_imgs/google+.png" />
                                         </a>
                                     </li>
@@ -363,20 +373,20 @@
                             <div class="clearfix visible-md visible-sm"></div>
                             <div class="col-md-6 col-sm-6">
                                 <ul class="socialize-list">
-                                    <li>
-                                        <a href="#">
+                                    <li class="visible-lg">
+                                        <a href="https://github.com/ick-seshoka" target="_blank">
                                             <img src="./images/homepage_imgs/github.png" />
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">
+                                    <li class="hidden-md">
+                                        <a href="http://instagram.com/ick_seshoka" target="_blank">
                                             <img src="./images/homepage_imgs/instagram.png" />
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <a class="read-more pull-right" href="#">+Read More</a>
+                        <a class="read-more pull-right" href="./pages/about.html">+Read More</a>
                     </div>
                 </div>
             </section>
@@ -388,11 +398,86 @@
                     <div class="container">
                         <div id="hire-me-container" class="col-md-12 col-sm-12">
                             <div class="col-ms-8 col-sm-8">
-                                
+                                <div id="famous-quotes" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators quote-indicators">
+                                        <li data-target="#famous-quotes" data-slide-to="0" class="active"></li>
+                                        <li data-target="#famous-quotes" data-slide-to="1"></li>
+                                        <li data-target="#famous-quotes" data-slide-to="2"></li>
+                                    </ol>
+                                    
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="media">
+                                                <a class="pull-left">
+                                                    <img class="pic" src="./images/mark.png">
+                                                </a>
+                                                <div class="media-body">
+                                                    <blockquote>
+                                                        <p>
+                                                            I’m here to build something for the long-term. Anything else is a distraction.
+                                                        </p>
+                                                        <small>
+                                                            <cite>
+                                                                <a href="http://en.wikipedia.org/wiki/Mark_Zuckerberg" target="_blank" >
+                                                                    Mark Zuckerberg
+                                                                </a>
+                                                            </cite>
+                                                        </small>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <a class="pull-left">
+                                                    <img class="pic" src="./images/steve.png">
+                                                </a>
+                                                <div class="media-body">
+                                                    <blockquote>
+                                                        <p>
+                                                            Design is not just what it looks like and feels like. Design is how it works
+                                                        </p>
+                                                        <small>
+                                                            <cite>
+                                                                <a href="http://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">
+                                                                    Steve Jobs
+                                                                </a>
+                                                            </cite>
+                                                        </small>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <a class="pull-left">
+                                                    <img class="pic" src="./images/jack.png">
+                                                </a>
+                                                <div class="media-body">
+                                                    <blockquote>
+                                                        <p>
+                                                            Make every detail perfect, and limit the number of details to perfect.
+                                                        </p>
+                                                        <small>
+                                                            <cite>
+                                                                <a href="http://en.wikipedia.org/wiki/Jack_Dorsey" target="_blank">
+                                                                    Jack Dorsey
+                                                                </a>
+                                                            </cite>
+                                                        </small>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-ms-4 col-sm-4">
                                 <div class="hire-me-btn-container">
-                                    <a class="large-hire-me-btn" href="#"  data-toggle="modal" data-target="#contact-me-modal">
+                                    <a class="large-hire-me-btn" href="#">
                                         Need A Website? Hire Me
                                     </a>
                                 </div>
@@ -402,7 +487,7 @@
                             <div id="lower-section-heading-container">
                                 <h1 id="let-the-world-know">let the world know</h1>
                             </div>
-                            <div id="share-container">
+                            <div id="share-container" class="center-block">
                                 <div class="share-group-normal-state">
                                     <i id="share-icon">
                                         <img src="./images/homepage_imgs/icon-share.png" />
@@ -425,10 +510,10 @@
             
             <footer id="footer-section">
                 <div class="row">
-                    <div class="container">
+                    <div class="container reset-padding">
                         <div class="col-md-3 col-sm-3">
                             <div class="footer-content-box">
-                                <img class="footer-logo" src="./images/footer-logo.png" alt="footer logo" />
+                                <img class="footer-logo img-responsive center-block" src="./images/footer-logo.png" alt="footer logo" />
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">
@@ -439,7 +524,7 @@
                                         <span class="active-page nav-link-active">
                                                 <img src="./images/active-page.png" alt="footer-nav-indicator">
                                             </span>
-                                        <a class="site-link" href="#">
+                                        <a class="site-link" href="./index.html">
                                             Home
                                         </a>
                                         <span class="footer-nav-indicator pull-right">
@@ -450,7 +535,7 @@
                                         <span class="active-page inactive">
                                                 <img src="./images/active-page.png" alt="footer-nav-indicator">
                                             </span>
-                                        <a class="site-link" href="#">
+                                        <a class="site-link" href="./pages/portfolio.html">
                                             My Portfolio 
                                         </a>
                                         <span class="footer-nav-indicator pull-right">
@@ -461,7 +546,7 @@
                                         <span class="active-page inactive">
                                                 <img src="./images/active-page.png" alt="footer-nav-indicator">
                                             </span>
-                                        <a class="site-link" href="#">
+                                        <a class="site-link" href="./pages/about.html">
                                             About Me
                                         </a>
                                         <span class="footer-nav-indicator pull-right">
@@ -471,25 +556,60 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-3 col-sm-3 reset-padding-right">
                             <div class="footer-content-box">
                                 <h3>Contact Me</h3>
                                 <p>
-                                     Get in touch with me, drop me an email<br />
+                                     Get in touch with me, drop me an email<br class="visible-lg">
                                      or give me a call.
                                 </p>
+                                <div class="col-md-11 col-sm-12 col-md-offset-1 contact-details">
+                                    <a href="#">
+                                        <span>
+                                            <img src="./images/icon-email.png" alt="icon-email"/>
+                                        </span>
+                                        ick.seshoka@gmail.com
+                                    </a>
+                                    <a href="#">
+                                        <span>
+                                            <img src="./images/icon-phone.png" alt="icon-phone"/>
+                                        </span>
+                                        +27 723 050 465
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <div class="footer-content-box">
                                 <h3>Find Me On</h3>
+                                <div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 social-list">
+                                    <a class="social-list-item child" href="https://www.facebook.com/ick.seshoka" target="_blank">
+                                        <img class="icon-social" src="./images/fb-dark.png">
+                                    </a>
+                                    <a class="social-list-item child" href="https://twitter.com/ick_Seshoka" target="_blank">
+                                        <img class="icon-social" src="./images/twtr-dark.png">
+                                    </a>
+                                    <a class="social-list-item" href="http://instagram.com/ick_seshoka" target="_blank">
+                                        <img class="icon-social" src="./images/inst-dark.png">
+                                    </a>
+                                    <div class="clearfix visible-xs"></div>
+                                    <a class="social-list-item child" href="http://google.com/+isaacSeshoka" target="_blank">
+                                        <img class="icon-social" src="./images/gplus-dark.png">
+                                    </a>
+                                    <a class="social-list-item child" href="#" target="_blank">
+                                        <img class="icon-social" src="./images/skp-dark.png">
+                                    </a>
+                                    <a class="social-list-item" href="http://www.youtube.com/channel/UCwQjGBWTNziLLY5B4XPVGoA" target="_blank">
+                                        <img class="icon-social" src="./images/yt-dark.png">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-no-padding">
                         <div class="black-line"></div>
                         <div class="white-line"></div>
-                        <p class="copy-right">&copy; 2014, Designed And Developed by <a href="#">Ick_seshoka</a>, All Rights Reserved.</p>
+                        <p class="copy-right">&copy; 2014, Designed And Developed by <a>Ick_seshoka</a>, All Rights Reserved.</p>
                     </div>
                     <div class="clearfix"></div>
                     <div id="footer-bottom-line"></div>
@@ -500,54 +620,15 @@
     <!-- Java Script -->
     <script type="text/javascript" src="./scripts/JQuery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./scripts/responsiveJS/responsiveJS.min.js"></script>
-    <script type="text/javascript">
-        
-        /*
-            script used to open and close the mobile menu when the trigger is clicked
-        */
-        
-        $("a#mobile-menu-trigger").on('click',function(){
-            console.log("mobile menu bar togle pressed");
-            
-            var mobile_menu_container = document.getElementById("mobile-menu-container");
-            var mobile_menu = document.getElementById("mobile-menu");
-            var mobile_menu_height = null;
-            
-            /*
-                computed style used by newer browsers
-            */
-            if(typeof getComputedStyle !== "undefined"){
-                console.log("true");
-                mobile_menu_height = window.getComputedStyle(mobile_menu,null).getPropertyValue("height");
-            }else{
-            /*
-                computed style used by older browsers (legacy IE)
-            */
-                console.log("false");
-                mobile_menu_height = mobile_menu.currentStyle["height"];
-            }
-            
-            console.log("height: "+mobile_menu_height);
-            
-            /*
-                opening mobile menu when it is closed
-            */
-            if(mobile_menu_height === "0px"){
-                mobile_menu_container.style.display = "block";
-                mobile_menu_container.style.height = "250px";
-                mobile_menu_container.style.borderBottom = "3px solid rgba(0,0,0,0.3)";
-                mobile_menu.style.height = "250px";
-                
-            }else{
-                /*
-                    close mobile menu when its open
-                */
-                mobile_menu_container.style.display = "none";
-                mobile_menu_container.style.height = "0px";
-                mobile_menu_container.style.borderBottom = "none";
-                mobile_menu.style.height = "0px";
-            }
+    <script type="text/javascript" src="./scripts/scroll-top.js"></script>
+    <script type="text/javascript" src="./scripts/header.js"></script>
+    <script type="text/javascript" src="./scripts/mobile_menu.js"></script>
+    <!--  initializing the carousel  -->
+    <script>
+        $(document).ready(function(){
+          $("#famous-quotes").carousel({
+              interval: 7000
+          });
         });
-        
     </script>
 </html>
