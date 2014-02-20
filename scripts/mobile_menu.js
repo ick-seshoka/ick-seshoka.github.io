@@ -11,6 +11,10 @@
             var mobileMenu_height = null;
             
             /*
+                correct margin top of the #title-section-container
+            */
+            $("#title-section-container").css("margin-top","0");
+            /*
                 computed style used by newer browsers
             */
             if(typeof getComputedStyle !== "undefined"){
@@ -31,18 +35,26 @@
             */
             if(mobileMenu_height === "0px"){
                 mobileMenuContainer.style.display = "block";
-                mobileMenuContainer.style.height = "250px";
+                $("#mobile-menu-container").animate({
+                    height: 250
+                },300);
                 mobileMenuContainer.style.borderBottom = "3px solid rgba(0,0,0,0.3)";
-                mobileMenu.style.height = "250px";
+                $("#mobile-menu").animate({
+                    height: 250
+                },300).css("opacity","1");
                 
             }else{
                 /*
                     close mobile menu when its open
                 */
-                mobileMenuContainer.style.display = "none";
-                mobileMenuContainer.style.height = "0px";
+                $("#mobile-menu-container").animate({
+                    height: 0
+                },300);
                 mobileMenuContainer.style.borderBottom = "none";
-                mobileMenu.style.height = "0px";
+                $("#mobile-menu").animate({
+                    height: 0
+                },300).css("opacity","0");
             }
+            return false;
         });
     });
