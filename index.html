@@ -8,6 +8,15 @@
     
         <meta name="description" content>
         <meta name="author" content="isaac Seshoka">
+        
+        <!-- Open graph meta tags-->
+        <meta property="og:title" content="creative young web designer/web developer">
+        <meta property="og:site_name" content="ickTheDeveloper">
+        <meta property="og:url" content="http://ick-seshoka.github.io/">
+        <meta property="og:description" content="Are you in need of a website? or a web designer? or someone to develop your website idea?, checkout ickTheDeveloper">
+        <meta property="og:image" content="./images/article_img.png">
+        <meta property="fb:app_id" content="770724736289033">
+        <meta property="article:author" content="ick_seshoka">
     
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
@@ -244,7 +253,7 @@
                     <div id="what-i-do" class="main-content-inner col-md-4 col-sm-4">
                         <img class="center-block scale-down" src="./images/homepage_imgs/pc.png" alt="pc" />
                         <h3>What I Do</h3>
-                        <h4>Design, Implement, Develop</h4>
+                        <h4>Design, Develop, Test</h4>
                         <p>I use the latest web technologies, tools <br class="visible-lg">
                             techniques and standards to<br class="visible-md visible-lg">
                             create sleek <a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">
@@ -495,9 +504,9 @@
                                     <span id="share">share</span>
                                 </div>
                                 <div class="share-group-hover-state">
-                                    <a class="share-social-media" href="#">
+                                    <a class="share-social-media" href="javascript:twttrShare('http://ick-seshoka.github.io/', 'ick_seshoka', 'in need of a website? or a web designer? or someone to develop your website idea?, checkout ickTheDeveloper', 'ick_seshoka', 'http://ick-seshoka.github.io/', 'WebDeveloper,WebDesigner,ickTheDeveloper')">
                                         <img src="./images/homepage_imgs/icon-twitter.png" alt="share-twitter" /></a>
-                                    <a class="share-social-media" href="#">
+                                    <a class="share-social-media" href="javascript:fbShare('http://ick-seshoka.github.io/', 'creative young web designer/web developer', 'Are you in need of a website? or a web designer? or someone to develop your website idea?, checkout ickTheDeveloper', './images/article_img.png', 520, 350)">
                                         <img src="./images/homepage_imgs/icon-facebook.png" alt="share-facebook" /></a>
                                 </div>
                             </div>
@@ -631,4 +640,17 @@
           });
         });
     </script>
+    <!-- cutsom facebook and twitter share script-->
+    <script>
+        function fbShare(url, title, descr, image, winWidth, winHeight) {
+            var winTop = (screen.height / 2) - (winHeight / 2);
+            var winLeft = (screen.width / 2) - (winWidth / 2);
+            window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
+        }
+        
+        function twttrShare(url, via, text, related, counturl, hashtags){
+            window.open('https://twitter.com/share?url='+url+'&via='+via+'&text='+text+'&related='+related+'&counturl='+counturl+'&hashtags='+hashtags);
+        }
+    </script>
+    
 </html>
