@@ -17,6 +17,10 @@
     max-height: 500px
     }
 
+#slider ol li[data-target="#slider"] {
+    margin-right: 1px;
+}
+
 .carousel-indicators li, .carousel-indicators li.active {
     width: 20px;
     height: 20px;
