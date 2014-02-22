@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8" itemscope itemtype="http://schema.org/Article"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" itemscope itemtype="http://schema.org/Article"> <!--<![endif]-->
 
     <head>
         <meta charset="utf-8">
@@ -8,6 +8,15 @@
     
         <meta name="description" content>
         <meta name="author" content>
+        
+        <!-- Open graph meta tags-->
+        <meta property="og:title" content="creative young web designer/web developer">
+        <meta property="og:site_name" content="ickTheDeveloper">
+        <meta property="og:url" content="http://ick-seshoka.github.io/">
+        <meta property="og:description" content="Are you in need of a website? or a web designer? or someone to develop your website idea?, checkout ickTheDeveloper">
+        <meta property="og:image" content="../images/article_img.png">
+        <meta property="fb:app_id" content="770724736289033">
+        <meta property="article:author" content="ick_seshoka">
     
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
@@ -15,6 +24,7 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="../css/normalize.css" />
         <link rel="stylesheet" href="../css/responsive_stylesheet/responsive.css" />
+        <link rel="stylesheet"  href="../css/share_group-stylesheet.css" />
         <link rel="stylesheet"  href="../css/scroll-top.css" />
         <link rel="stylesheet"  href="../css/header_stylesheet.css" />
         <link rel="stylesheet"  href="../css/mobile_menu_stylesheet.css" />
@@ -34,10 +44,52 @@
         <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     </head>
     <body id="top">
-            <!----------------------------------- Header  ----------------------------------------------->
+        <!-- Facebook share script-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!--------- media share group --------------->
+        <div class="share-group visible-lg visible-md">
+            <span class="share">share</span>
+            <a class="trigger">
+                <img class="icon-share" src="../images/icon-share.png" alt="icon-share"/>
+            </a>
+            <ul class="share-group-body">
+                <li>
+                    <!-- Facebook share button-->
+                    <div class="fb-share-button" data-href="http://ick-seshoka.github.io/" data-type="box_count"></div>
+                </li>
+                <li>
+                <!-- Twitter share button-->
+                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://ick-seshoka.github.io/" data-via="ick_seshoka" data-text="In need of someone to develop your website idea?, checkout ickTheDeveloper" data-related="ick_seshoka:A creative young web developer/designer" data-count="vertical" data-counturl="http://ick-seshoka.github.io/" data-hashtags="WebDeveloper">Tweet</a>
+                <!-- Twiter share script-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </li>
+                <li>
+                    <!-- Google+ share button-->
+                    <div class="g-plus" data-href="http://ick-seshoka.github.io/" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>
+                    <!-- Google+ share async script-->
+                    <script type="text/javascript">
+                      (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/platform.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+                </li>
+            </ul>
+        </div>
+        <!--------- scroll top --------------->
         <a class="scroll-top" href="#top">
             <img src="../images/scroll-top.png" alt="back-to-top">
         </a>
+            <!----------------------------------- Header  ----------------------------------------------->
         <header id="page-header">            
             <div class="fixed-top"></div>
             <div class="container">
@@ -238,30 +290,18 @@
                                     Design
                                 </h4>
                                 <p class="block-paragraph">
-                                    Hackathons are a great place to meet and interact with 
-                                    other creative young developers out there. A 
-                                    great place to learn and apply knowlagde, a 
-                                    place where solutions to complex problems
-                                    are found.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="media">
-                            <a class="icon pull-left">
-                                <img class="media-object" src="../images/icon-implement.png" alt="icon-design" />
-                            </a>
-                            <div class="media-body">
-                                <h4 class="main-section-header-block">
-                                    Implement
-                                </h4>
-                                <p class="block-paragraph">
-                                    Hackathons are a great place to meet and interact with 
-                                    other creative young developers out there. A 
-                                    great place to learn and apply knowlagde, a 
-                                    place where solutions to complex problems
-                                    are found.
+                                    I design webpages, from how they behave
+                                    on desktops to how they behave on mobile 
+                                    devices. I also do clean and sleek 
+                                    <a href="#" target="_blank">
+                                        <span class="icon">
+                                            <img src="../images/homepage_imgs/icon-info.png" alt="icon-info"/>
+                                        </span>
+                                        UI design
+                                    </a> of how a webpage 
+                                    looks on desktop.
+                                    i achive all this with the use of my favourite design tools 
+                                    Adobe Photoshop and  Adobe illustrator.
                                 </p>
                             </div>
                         </div>
@@ -276,10 +316,38 @@
                                     Develop
                                 </h4>
                                 <p class="block-paragraph">
+                                    After I have designed a webpage, i turn the
+                                    design into a 
+                                    <a href="#" target="_blank">
+                                        <span class="icon">
+                                            <img src="../images/homepage_imgs/icon-info.png" alt="icon-info"/>
+                                        </span>
+                                        cross browser compatible
+                                    </a>
+                                    website that’s
+                                    also mobile optimized.
+                                    i write all the required code from 
+                                    ground up, making use of latest web standards, languages
+                                    and techniques (HTML5, CSS3, JQuery ect).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="media">
+                            <a class="icon pull-left">
+                                <img class="media-object" src="../images/icon-implement.png" alt="icon-design" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="main-section-header-block">
+                                    Test
+                                </h4>
+                                <p class="block-paragraph">
                                     Hackathons are a great place to meet and interact with 
                                     other creative young developers out there. A 
                                     great place to learn and apply knowlagde, a 
                                     place where solutions to complex problems
+                                    are found.place where solutions to complex problems
                                     are found.
                                 </p>
                             </div>
