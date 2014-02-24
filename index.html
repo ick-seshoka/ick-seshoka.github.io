@@ -18,7 +18,7 @@
         <link rel="image_src" href="./images/article_large_img.png"/>
         <meta property="fb:admins" content="100000047462110" />
         <meta property="fb:app_id" content="770724736289033">
-        <meta property="article:author" content="ick_seshoka">
+        <meta property="article:author" content="https://www.facebook.com/ick.seshoka">
     
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
@@ -103,7 +103,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#"  data-toggle="modal" data-target="#contact-me-modal">
+                                    <a href="#contact-me">
                                     <span class="nav-active-element-icon inactive">
                                         <img src="./images/icon-contact-active.png" alt="icon-contact-active" /> 
                                     </span>
@@ -151,7 +151,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#contact-me">
                             <span class="big-text">contact me</span>
                             <span class="nav-element-icon-mobile pull-right">
                                 <img src="./images/icon-contact.png" alt="icon-contact" />  
@@ -319,7 +319,7 @@
                         <h4>My Work</h4>
                         <p>Checkout the design of this
                             site I developed.&nbsp;
-                            <a href="./assests/my_site-Recovered.psd">
+                            <a href="./assests/ickTheDeveloper_website_design.zip">
                                 <span class="icon-download">
                                     <img src="./images/homepage_imgs/icon-download-blue.png" />
                                 </span>download</a>
@@ -340,7 +340,7 @@
                                     <p class="fgc-paragraph">
                                         Photoshop design file of this <br/>site.
                                     </p>
-                                    <a class="fgc-btn" href="#">
+                                    <a class="fgc-btn" href="./assests/ickTheDeveloper_website_design.zip">
                                         <span class="icon-download">
                                             <img src="./images/homepage_imgs/icon-download.png" />
                                         </span>
@@ -489,7 +489,7 @@
                             </div>
                             <div class="col-ms-4 col-sm-4">
                                 <div class="hire-me-btn-container">
-                                    <a class="large-hire-me-btn" href="#">
+                                    <a class="large-hire-me-btn" href="#contact-me" data-toggle="tooltip" data-placement="bottom" title="Checkout my contact details">
                                         Need A Website? Hire Me
                                     </a>
                                 </div>
@@ -568,9 +568,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3 reset-padding-right">
+                        <div id="contact-me" class="col-md-3 col-sm-3 reset-padding-right">
                             <div class="footer-content-box">
-                                <h3>Contact Me</h3>
+                                <h3 data-toggle="tooltip" data-placement="top">Contact Me</h3>
                                 <p>
                                      Get in touch with me, drop me an email<br class="visible-lg">
                                      or give me a call.
@@ -608,7 +608,7 @@
                                     <a class="social-list-item child" href="http://google.com/+isaacSeshoka" target="_blank">
                                         <img class="icon-social" src="./images/gplus-dark.png">
                                     </a>
-                                    <a class="social-list-item child" href="#" target="_blank">
+                                    <a class="social-list-item child" data-toggle="tooltip" data-placement="bottom" title="skype plugin not available">
                                         <img class="icon-social" src="./images/skp-dark.png">
                                     </a>
                                     <a class="social-list-item" href="http://www.youtube.com/channel/UCwQjGBWTNziLLY5B4XPVGoA" target="_blank">
@@ -627,47 +627,79 @@
                     <div id="footer-bottom-line"></div>
                 </div>
             </footer>
+        
+        <!-- Java Script -->
+        <script type="text/javascript" src="./scripts/JQuery/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./scripts/responsiveJS/responsiveJS.min.js"></script>
+        <script type="text/javascript" src="./scripts/scroll-top.js"></script>
+        <script type="text/javascript" src="./scripts/header.js"></script>
+        <script type="text/javascript" src="./scripts/mobile_menu.js"></script>
+        
+        <!--  initializing the carousel and tooltip  -->
+        <script>
+            $(document).ready(function(){
+                $('a[data-toggle="tooltip"]').tooltip();
+                $("#famous-quotes").carousel({
+                    interval: 7000
+                });
+            });
+        </script>
+    
+        <!-- cutsom facebook and twitter share script-->
+        <script>
+            function fbShare(url, title, descr, image, winWidth, winHeight) {
+                var winTop = (screen.height / 2) - (winHeight / 2);
+                var winLeft = (screen.width / 2) - (winWidth / 2);
+                window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
+            }
+            
+            function twttrShare(url, via, text, related, counturl, hashtags, winWidth, winHeight){
+                var winTop = (screen.height / 2) - (winHeight / 2);
+                var winLeft = (screen.width / 2) - (winWidth / 2);
+                window.open('https://twitter.com/share?url='+url+'&via='+via+'&text='+text+'&related='+related+'&counturl='+counturl+'&hashtags='+hashtags,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
+            }
+        </script>
+    
+        <!-- Contact me scroll script-->
+        <script>
+            /*set the title to be displayed in the tooltip*/
+            $('h3[data-toggle="tooltip"]').tooltip({
+                title: "Here's how to get in touch with me"
+            });
+            
+            /*contact me on click function*/
+            $(document).ready(function(){
+               $('a[href="#contact-me"]').click(function(event){
+                   event.preventDefault();
+                   
+                   var target = this.hash;
+                   var $target = $(target);
+                   
+                   $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 800, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                    
+                   /*
+                        displaying the tooltip using bootstrap's default show option, then hiding it
+                        with JQuery's hide method to enable fadeIn-Delay-FadeOut effect.
+                   */
+                   $('h3[data-toggle="tooltip"]').tooltip('show');
+                   $('.tooltip').hide().fadeIn().delay(6000).fadeOut('slow');
+               });
+            });
+        </script>
+        
+        <!--  Analytics script  -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-48241941-1', 'ick-seshoka.github.io');
+            ga('send', 'pageview');
+        </script>
     </body>
-    
-    <!-- Java Script -->
-    <script type="text/javascript" src="./scripts/JQuery/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="./scripts/responsiveJS/responsiveJS.min.js"></script>
-    <script type="text/javascript" src="./scripts/scroll-top.js"></script>
-    <script type="text/javascript" src="./scripts/header.js"></script>
-    <script type="text/javascript" src="./scripts/mobile_menu.js"></script>
-    
-    <!--  initializing the carousel  -->
-    <script>
-        $(document).ready(function(){
-          $("#famous-quotes").carousel({
-              interval: 7000
-          });
-        });
-    </script>
-
-    <!-- cutsom facebook and twitter share script-->
-    <script>
-        function fbShare(url, title, descr, image, winWidth, winHeight) {
-            var winTop = (screen.height / 2) - (winHeight / 2);
-            var winLeft = (screen.width / 2) - (winWidth / 2);
-            window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
-        }
-        
-        function twttrShare(url, via, text, related, counturl, hashtags, winWidth, winHeight){
-            var winTop = (screen.height / 2) - (winHeight / 2);
-            var winLeft = (screen.width / 2) - (winWidth / 2);
-            window.open('https://twitter.com/share?url='+url+'&via='+via+'&text='+text+'&related='+related+'&counturl='+counturl+'&hashtags='+hashtags,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
-        }
-    </script>
-    
-    <!--  Analytics script  -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
-        ga('create', 'UA-48241941-1', 'ick-seshoka.github.io');
-        ga('send', 'pageview');
-    </script>
 </html>
