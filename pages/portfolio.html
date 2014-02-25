@@ -23,7 +23,7 @@
         <link rel="image_src" href="../images/article_large_img.png"/>
         <meta property="fb:admins" content="100000047462110" />
         <meta property="fb:app_id" content="770724736289033">
-        <meta property="article:author" content="ick_seshoka">
+        <meta property="article:author" content="https://www.facebook.com/ick.seshoka">
     
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
@@ -151,7 +151,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#"  data-toggle="modal" data-target="#contact-me-modal">
+                                    <a href="#contact-me">
                                     <span class="nav-active-element-icon inactive">
                                         <img src="../images/icon-contact-active.png" alt="icon-contact-active" /> 
                                     </span>
@@ -199,7 +199,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="contact-me" href="">
+                        <a href="#contact-me">
                             <span class="big-text">contact me</span>
                             <span class="nav-element-icon-mobile pull-right">
                                 <img src="../images/icon-contact.png" alt="icon-contact" />  
@@ -308,7 +308,7 @@
                                         UI design
                                     </a> of how a webpage 
                                     looks on desktop.
-                                    i achive all this with the use of my favourite design tools 
+                                    I achieve all this with the use of my favourite design tools 
                                     Adobe Photoshop and  Adobe illustrator.
                                 </p>
                             </div>
@@ -324,7 +324,7 @@
                                     Develop
                                 </h4>
                                 <p class="block-paragraph">
-                                    After I have designed a webpage, i turn the
+                                    After I have designed a webpage, I turn the
                                     design into a 
                                     <a href="#" target="_blank">
                                         <span class="icon">
@@ -334,7 +334,7 @@
                                     </a>
                                     website that’s
                                     also mobile optimized.
-                                    i write all the required code from 
+                                    I write all the required code from 
                                     ground up, making use of latest web standards, languages
                                     and techniques (HTML5, CSS3, JQuery ect).
                                 </p>
@@ -351,12 +351,16 @@
                                     Test
                                 </h4>
                                 <p class="block-paragraph">
-                                    Hackathons are a great place to meet and interact with 
-                                    other creative young developers out there. A 
-                                    great place to learn and apply knowlagde, a 
-                                    place where solutions to complex problems
-                                    are found.place where solutions to complex problems
-                                    are found.
+                                    Testing is an essential phase in web development,
+                                    it ensures that all features of a webpage work properly.
+                                    To ensure that a webpage is cross browser compatible and mobile 
+                                    optimized, i test it on all major web browsers and use 
+                                    <a href="#" target="_blank">
+                                        <span class="icon">
+                                            <img src="../images/homepage_imgs/icon-info.png" alt="icon-info"/>
+                                        </span>
+                                    responsive design test tools.
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -481,9 +485,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 reset-padding-right">
+                    <div id="contact-me" class="col-md-3 col-sm-3 reset-padding-right">
                         <div class="footer-content-box">
-                            <h3>Contact Me</h3>
+                            <h3 data-toggle="tooltip" data-placement="top">Contact Me</h3>
                             <p>
                                  Get in touch with me, drop me an email<br class="visible-lg"/>
                                  or give me a call.
@@ -521,7 +525,7 @@
                                 <a class="social-list-item child" href="http://google.com/+isaacSeshoka" target="_blank">
                                     <img class="icon-social" src="../images/gplus-dark.png">
                                 </a>
-                                <a class="social-list-item child" href="#" target="_blank">
+                                <a class="social-list-item child" data-toggle="tooltip" data-placement="bottom" title="skype plugin not available">
                                     <img class="icon-social" src="../images/skp-dark.png">
                                 </a>
                                 <a class="social-list-item" href="http://www.youtube.com/channel/UCwQjGBWTNziLLY5B4XPVGoA" target="_blank">
@@ -540,24 +544,55 @@
                 <div id="footer-bottom-line"></div>
             </div>
         </footer>
-    </body>
     
-    <!-- Java Script -->
-    <script type="text/javascript" src="../scripts/JQuery/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../scripts/responsiveJS/responsiveJS.min.js"></script>
-    <script type="text/javascript" src="../scripts/scroll-top.js"></script>
-    <script type="text/javascript" src="../scripts/header.js"></script>
-    <script type="text/javascript" src="../scripts/mobile_menu.js"></script>
-    </script>
-    <!--  Analytics script  -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Java Script -->
+        <script type="text/javascript" src="../scripts/JQuery/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="../scripts/responsiveJS/responsiveJS.min.js"></script>
+        <script type="text/javascript" src="../scripts/scroll-top.js"></script>
+        <script type="text/javascript" src="../scripts/header.js"></script>
+        <script type="text/javascript" src="../scripts/mobile_menu.js"></script>
         
-        ga('create', 'UA-48241941-1', 'ick-seshoka.github.io');
-        ga('send', 'pageview');
-    </script>
+        <!-- Contact me scroll script-->
+        <script>
+            $('a[data-toggle="tooltip"]').tooltip();
+            /*set the title to be displayed in the tooltip*/
+            $('h3[data-toggle="tooltip"]').tooltip({
+                title: "Here's how to get in touch with me"
+            });
+            
+            /*contact me on click function*/
+            $(document).ready(function(){
+               $('a[href="#contact-me"]').click(function(event){
+                   event.preventDefault();
+                   
+                   var target = this.hash;
+                   var $target = $(target);
+                   
+                   $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 800, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                    
+                   /*
+                        displaying the tooltip using bootstrap's default show option, then hiding it
+                        with JQuery's hide method to enable fadeIn-Delay-FadeOut effect.
+                   */
+                   $('h3[data-toggle="tooltip"]').tooltip('show');
+                   $('.tooltip').hide().fadeIn().delay(6000).fadeOut('slow');
+               });
+            });
+        </script>
+    
+        <!--  Analytics script  -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-48241941-1', 'ick-seshoka.github.io');
+            ga('send', 'pageview');
+        </script>
     </body>
 </html>
