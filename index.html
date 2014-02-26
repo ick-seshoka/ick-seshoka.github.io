@@ -689,10 +689,18 @@
                    $('.fade').css({
                        '-moz-transition': 'none',
                        '-webkit-transition': 'none',
-                       'transition': 'none',
+                       'transition': 'none'
                    });
                    $('.tooltip').hide().delay(650).fadeIn('slow').delay(6000).fadeOut('slow');
                });
+                
+                /*Restore default action of the tooltip on hover*/
+                $('h3[data-toggle="tooltip"]').hover(function(){
+                    $('.fade').css({
+                        '-webkit-transition': 'opacity .15s linear',
+                        'transition': 'opacity .15s linear'
+                    });
+                });
             });
         </script>
         
