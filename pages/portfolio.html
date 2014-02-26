@@ -579,7 +579,12 @@
                         with JQuery's hide method to enable fadeIn-Delay-FadeOut effect.
                    */
                    $('h3[data-toggle="tooltip"]').tooltip('show');
-                   $('.tooltip').hide().fadeIn().delay(6000).fadeOut('slow');
+                   $('.fade').css({
+                       '-moz-transition': 'none',
+                       '-webkit-transition': 'none',
+                       'transition': 'none',
+                   });
+                   $('.tooltip').hide().delay(650).fadeIn('slow').delay(6000).fadeOut('slow');
                });
             });
         </script>
