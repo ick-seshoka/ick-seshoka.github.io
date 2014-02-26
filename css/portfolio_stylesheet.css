@@ -39,17 +39,16 @@ h1.title {
     }
 }
 
-@media screen and (max-width: 996px){
+@media screen and (max-width: 995px){
     #title-section-container {
         margin-top: 3px;
     }
-}
-
-@media screen and (max-width: 991px){
+    
     .container {
         padding-left: 15px;
         padding-right: 15px;
     }
+    
     #title-section-container {
         height: 80px;
     }
