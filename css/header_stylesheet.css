@@ -2,7 +2,7 @@
 
 header {
     width: 100%;
-    height: 95px;
+    height: 85px;
     position: fixed;
     left: 0;
     top: 0;
@@ -17,7 +17,7 @@ header {
     }
 
     .hide-small-text {
-        height: 75px;
+        height: 65px;
     }
 
 .fixed-top {
@@ -41,7 +41,7 @@ header {
 #logo {
     display: block;
     position: absolute;
-    top: 23px;
+    top: 20px;
     width: 290px;
     height: 44px;
     background: url(../images/logo.png) no-repeat 0 0;
@@ -51,7 +51,7 @@ header {
     }
 
 .hide-small-text #logo {
-    top: 15px;
+    top: 11px;
 }
 
 #mobile-menu-trigger {
@@ -72,7 +72,7 @@ header {
 .top-nav li {
     display: block;
     width: 21.621621%;
-    height: 90px;
+    height: 80px;
     margin-right: 1.5%;
     float: left;
     position: relative;
@@ -82,7 +82,7 @@ header {
     }
 
 .hide-small-text .top-nav li {
-    height: 70px;
+    height: 60px;
 }
 
 a:focus {
@@ -93,7 +93,6 @@ a:focus {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
     left: 0;
     overflow: hidden;
     text-decoration: none;
@@ -105,7 +104,7 @@ a:focus {
     height: 11px;
     margin-bottom: 8px;
     position: relative;
-    top: -6px;
+    top: -9px;
     left: 42%;
     }
 
@@ -124,14 +123,14 @@ a:focus {
     height: 14px;
     position: relative;
     left: 43%;
-    top: -2px;
+    top: -6px;
     -webkit-transition: top 0.2s;
     -moz-transition: top 0.2s;
     transition: top 0.2s;
     }
 
 .hide-small-text .top-nav li a span.nav-element-icon {
-    top: -6px;
+    top: -8px;
 }
 
 #nav-active-element-icon-portfolio {
@@ -148,7 +147,7 @@ a:focus {
 .top-nav li a span.big-text {
     display: block;
     position: relative;
-    top: 5px;
+    top: 0px;
     color: #f3eeee;
     -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -156,7 +155,7 @@ a:focus {
     -o-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
     -webkit-transition: top 0.2s;
     -moz-transition: top 0.2s;
@@ -164,13 +163,13 @@ a:focus {
     }
 
 .hide-small-text .top-nav li a span.big-text {
-    top: 0px;
+    top: -2px;
 }
 
 .top-nav li a span.small-text {
     display: block;
     position: relative;
-    top: 5px;
+    top: -2px;
     font-style: italic;
     font-size: 13px;
     color: rgba(202, 202, 202, 0.7);
@@ -186,15 +185,15 @@ a:focus {
 }
 
 .top-nav li a:hover span.small-text {
-    top: 2px;
+    top: -4px;
     color: rgba(225, 225, 225, 1);
     }
 
 .top-nav li a span.indicator {
     display: block;
     position: relative;
-    top: 23px;
-    left: 34%;
+    top: 13px;
+    left: 32%;
     width: 40px;
     height: 5px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
@@ -211,18 +210,18 @@ a:focus {
     }
 
 .hide-small-text .top-nav li a span.indicator {
-    top: 0;
+    top: -10px;
 }
 
 .top-nav li a:hover span.indicator {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
     filter: alpha(opacity=90);
     opacity: 0.9;
-    top: 17px;
+    top: 7px;
     }
 
 .hide-small-text .top-nav li a:hover span.indicator {
-    top: -3px;
+    top: -13px;
 }
 
 .stroke {

@@ -75,7 +75,7 @@
                 </li>
                 <li>
                 <!-- Twitter share button-->
-                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://ick-seshoka.github.io/" data-via="ick_seshoka" data-text="In need of a website? or a web designer? or someone to develop your website idea?, checkout ickTheDeveloper" data-related="ick_seshoka:A creative young web developer/designer" data-count="vertical" data-counturl="http://ick-seshoka.github.io/" data-hashtags="WebDeveloper,WebDesigner,ickTheDeveloper">Tweet</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://ick-seshoka.github.io/" data-via="ick_seshoka" data-text="In need of someone to develop your website idea?, checkout ickTheDeveloper" data-related="ick_seshoka:A creative young web developer/designer" data-count="vertical" data-counturl="http://ick-seshoka.github.io/" data-hashtags="WebDeveloper">Tweet</a>
                 <!-- Twiter share script-->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </li>
@@ -650,8 +650,21 @@
                         with JQuery's hide method to enable fadeIn-Delay-FadeOut effect.
                    */
                    $('h3[data-toggle="tooltip"]').tooltip('show');
-                   $('.tooltip').hide().fadeIn().delay(6000).fadeOut('slow');
+                   $('.fade').css({
+                       '-moz-transition': 'none',
+                       '-webkit-transition': 'none',
+                       'transition': 'none'
+                   });
+                   $('.tooltip').hide().delay(650).fadeIn('slow').delay(6000).fadeOut('slow');
                });
+                
+                /*Restore default action of the tooltip on hover*/
+                $('h3[data-toggle="tooltip"]').hover(function(){
+                    $('.fade').css({
+                        '-webkit-transition': 'opacity .15s linear',
+                        'transition': 'opacity .15s linear'
+                    });
+                });
             });
         </script>
     
