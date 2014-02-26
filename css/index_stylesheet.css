@@ -410,6 +410,7 @@ a.read-more {
 }
 /* =================== Lower Section =================  */
 #lower-section {
+    position: relative;
     width: 100%;
     padding-bottom: 20px;
     border-top: 1px solid rgba(53, 57, 65, 0.1);
