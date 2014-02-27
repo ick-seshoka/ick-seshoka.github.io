@@ -257,7 +257,7 @@
                         <img class="center-block scale-down" src="./images/homepage_imgs/pc.png" alt="pc" />
                         <h3>What I Do</h3>
                         <h4>Design, Develop, Test</h4>
-                        <p>I use the latest web technologies, tools <br class="visible-lg">
+                        <p>I use the latest web technologies, tools, <br class="visible-lg">
                             techniques and standards to<br class="visible-md visible-lg">
                             create sleek <a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">
                                 <span class="icon-download">
@@ -697,6 +697,7 @@
                 /*Restore default action of the tooltip on hover*/
                 $('h3[data-toggle="tooltip"]').hover(function(){
                     $('.fade').css({
+                        '-moz-transition': 'opacity .15s linear',
                         '-webkit-transition': 'opacity .15s linear',
                         'transition': 'opacity .15s linear'
                     });
