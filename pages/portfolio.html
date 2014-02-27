@@ -590,6 +590,7 @@
                 /*Restore default action of the tooltip on hover*/
                 $('h3[data-toggle="tooltip"]').hover(function(){
                     $('.fade').css({
+                        '-moz-transition': 'opacity .15s linear',
                         '-webkit-transition': 'opacity .15s linear',
                         'transition': 'opacity .15s linear'
                     });
