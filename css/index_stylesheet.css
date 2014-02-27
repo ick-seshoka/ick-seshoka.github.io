@@ -18,7 +18,7 @@
     }
 
 #slider ol li[data-target="#slider"] {
-    margin-right: 1px;
+    margin-right: 5px;
 }
 
 .carousel-indicators li, .carousel-indicators li.active {
@@ -449,6 +449,7 @@ a.read-more {
 .quote-indicators li.active {
     width: 10px;
     height: 10px;
+    margin-right: 3px;
 }
 
 .quote-indicators li.active {
