@@ -87,6 +87,14 @@ h1.title {
     z-index: 3;
 }
 
+.icon-holder {
+    display: block;
+    opacity: 1;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0;
+    -webkit-transition-timing-function: ease;
+}
+
 .content-holder h2 {
     margin-bottom: 40px;
     font-size: 20px;
@@ -125,10 +133,14 @@ h1.title {
     z-index: 135;
 }
 
-#main-section h2 {
+.small-title {
     font-size: 20px;
     color: rgba( 53, 57, 65, 0.6 );
     text-shadow: 0px 2px 0px rgb( 253, 253, 253 );
+    opacity: 1;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0s;
+    -webkit-transition-timing-function: ease;
 }
 
 .separator {
@@ -137,10 +149,7 @@ h1.title {
 
 .icon-holder img {
     margin-top: 20px;
-}
-
-.small-title {
-    margin-bottom: 10px;
+    
 }
 
 .line {
@@ -148,6 +157,10 @@ h1.title {
     margin-bottom: 20px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.71);
+    opacity: 1;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0s;
+    -webkit-transition-timing-function: ease
 }
 
 .block-paragraph {

@@ -38,6 +38,9 @@
         <link rel="stylesheet"  href="../css/mobile_menu_stylesheet.css" />
         <link rel="stylesheet" href="../css/modal_window_stylesheet.css" />
         <link rel="stylesheet" href="../css/footer_stylesheet.css" />
+        
+        <!-- Animations stylesheet-->
+        <link rel="stylesheet" href="../css/animation.css"/>
     
         <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -299,7 +302,7 @@
                         <span class="icon-holder">
                             <img src="../images/icon-person.png" alt="icon-flight"/>
                         </span>
-                        <h2>My Interests</h2>
+                        <h2 class="small-title">My Interests</h2>
                     </div>
                     <div class="col-md-3 col-sm-3"></div>
                 </div>
@@ -664,6 +667,150 @@
                         '-webkit-transition': 'opacity .15s linear',
                         'transition': 'opacity .15s linear'
                     });
+                });
+            });
+        </script>
+        
+        <!-- Content animation script -->
+        <script>
+            
+            /*Hide elements that must animate in*/
+            $(document).ready(function(){
+                var iconHolder = $('.icon-holder');
+                iconHolder.each(function(index){
+                    if(index == 1){
+                        $(this).addClass('hideFadeInBottom');
+                    }else if(index == 2){
+                        $(this).addClass('hideFadeInLeft');
+                    }else if(index == 3){
+                        $(this).addClass('hideFadeInBottom');
+                    }else if(index == 4){
+                        $(this).addClass('hideFadeInRight');
+                    }
+                });
+                
+                var titleHolder = $('.small-title');
+                titleHolder.each(function(index){
+                    if(index == 0){
+                        $(this).addClass('hideFadeInBottom');
+                    }else if(index == 1){
+                        $(this).addClass('hideFadeInLeft');
+                    }else if(index == 2){
+                        $(this).addClass('hideFadeInBottom');
+                    }else if(index == 3){
+                        $(this).addClass('hideFadeInRight');
+                    }
+                });
+                
+                var line = $('#main-section .line');
+                line.each(function(index){
+                    if(index == 0){
+                        $(this).addClass('hideFadeInLeft');
+                    }else if(index == 1){
+                        $(this).addClass('hideFadeInBottom');
+                    }else if(index == 2){
+                        $(this).addClass('hideFadeInRight');
+                    }
+                });
+                
+                var blockParagraph = $('.block-paragraph');
+                blockParagraph.each(function(index){
+                    if(index == 0){
+                        $(this).addClass('hideFadeInLeft');
+                    }else if(index == 1){
+                        $(this).addClass('hideFadeInBottom');
+                    }else if(index == 2){
+                        $(this).addClass('hideFadeInRight');
+                    }
+                });
+                
+                $(window).scroll(function(){
+                    var bottomOfWindow = $(window).scrollTop() + $(window).height();
+                    
+                    iconHolder.each(function(index){
+                       var iconHolderBottom = $(this).offset().top + $(this).outerHeight();
+                        if(bottomOfWindow > iconHolderBottom){
+                            if(index == 1){
+                                $(this).removeClass('hideFadeInBottom');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }else if(index == 2){
+                                $(this).removeClass('hideFadeInLeft');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInLeft');
+                            }else if(index == 3){
+                                $(this).removeClass('hideFadeInBottom');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }else if(index == 4){
+                                $(this).removeClass('hideFadeInRight');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInRight');
+                            }
+                        }
+                    });
+                    
+                    titleHolder.each(function(index){
+                       var titleHolderBottom = $(this).offset().top + $(this).outerHeight();
+                        if(bottomOfWindow > titleHolderBottom){
+                            if(index == 0){
+                                $(this).removeClass('hideFadeInBottom');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }else if(index == 1){
+                                $(this).removeClass('hideFadeInLeft');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInLeft');
+                            }else if(index == 2){
+                                $(this).removeClass('hideFadeInBottom');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }else if(index == 3){
+                                $(this).removeClass('hideFadeInRight');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInRight');
+                            }
+                        }
+                    });
+                    
+                    line.each(function(index){
+                       var lineBottom = $(this).offset().top + $(this).outerHeight();
+                        if(bottomOfWindow > lineBottom){
+                            if(index == 0){
+                                $(this).removeClass('hideFadeInLeft');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }else if(index == 1){
+                                $(this).removeClass('hideFadeInBottom');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInLeft');
+                            }else if(index == 2){
+                                $(this).removeClass('hideFadeInRight');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }
+                        }
+                    });
+                    
+                    blockParagraph.each(function(index){
+                       var blockParagraphBottom = $(this).offset().top + $(this).outerHeight();
+                        if(bottomOfWindow > blockParagraphBottom){
+                            if(index == 0){
+                                $(this).removeClass('hideFadeInLeft');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }else if(index == 1){
+                                $(this).removeClass('hideFadeInBottom');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInLeft');
+                            }else if(index == 2){
+                                $(this).removeClass('hideFadeInRight');
+                                $(this).addClass('animate');
+                                $(this).addClass('fadeInBottom');
+                            }
+                        }
+                    });
+                    
                 });
             });
         </script>

@@ -38,6 +38,9 @@
         <link rel="stylesheet"  href="../css/portfolio_stylesheet.css" />
         <link rel="stylesheet" href="../css/modal_window_stylesheet.css" />
         <link rel="stylesheet" href="../css/footer_stylesheet.css" />
+        
+        <!-- Animations stylesheet-->
+        <link rel="stylesheet" href="../css/animation.css"/>
     
         <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -597,7 +600,170 @@
                 });
             });
         </script>
-    
+        
+        <!-- Content animation script-->
+        <script>
+            $(document).ready(function(){
+               /*Hide elements that must animate in*/ 
+                var icon = $('a.icon');
+                var title = $('.main-section-header-block');
+                var paragraph = $('.block-paragraph');
+                var iphoneImage = $('.iphone');
+                var iconImage = $('.media-icon');
+                var mediaHeading = $('.media-heading');
+                var mediaParagraph = $('.media-paragraph');
+                
+                icon.addClass('hideFadeInBottom');
+                title.addClass('hideFadeInBottom');
+                paragraph.addClass('hideFadeInBottom');
+                iphoneImage.addClass('hideFadeInLeft');
+                iconImage.addClass('hideFadeInRight');
+                mediaHeading.addClass('hideFadeInRight');
+                mediaParagraph.addClass('hideFadeInRight');
+                
+                
+                /*Show hidden items when they are above the bottom of the window*/
+                $(window).scroll(function(){
+                    /*bottom of the windo*/
+                    var bottomOfWindow = $(window).scrollTop() + $(window).height();
+                    
+                    /*checking if each icon is above the screen and animating it in*/
+                    icon.each(function(index){
+                        
+                        /*bottom position of the object*/
+                        var bottomOfIcon = $(this).offset().top + $(this).outerHeight();
+                        
+                        /*check if object bottom is smaller than the windows'*/
+                        if(bottomOfWindow > bottomOfIcon){
+                            $(this).removeClass('hideFadeInBottom');
+                            $(this).addClass('animate');
+                            $(this).addClass('fadeInBottom');
+                            
+                            /*if its not the first one adding some delay in it*/
+                            if( index === 1){
+                                $(this).addClass('delaySmall');
+                                
+                            }else if(index === 2){
+                                $(this).addClass('delayMedium');
+                                
+                            }
+                        }
+                    });
+                    
+                    /*checking if each title is above the screen and animating it in*/
+                    title.each(function(index){
+                        
+                        /*bottom position of the object*/
+                        var bottomOfTitle = $(this).offset().top + $(this).outerHeight();
+                        
+                        /*check if object bottom is smaller than the windows'*/
+                        if(bottomOfWindow > bottomOfTitle){
+                            $(this).removeClass('hideFadeInBottom');
+                            $(this).addClass('animate');
+                            $(this).addClass('fadeInBottom');
+                            
+                            /*if its not the first one adding some delay in it*/
+                            if( index === 1){
+                                $(this).addClass('delaySmall');
+                                
+                            }else if(index === 2){
+                                $(this).addClass('delayMedium');
+                                
+                            }
+                        }
+                    });
+                    
+                    /*checking if each paragraph is above the screen and animating it in*/
+                    paragraph.each(function(index){
+                        
+                        /*bottom position of the object*/
+                        var bottomOfParagraph = $(this).offset().top + $(this).outerHeight();
+                        
+                        /*check if object bottom is smaller than the windows'*/
+                        if(bottomOfWindow > bottomOfParagraph){
+                            $(this).removeClass('hideFadeInBottom');
+                            $(this).addClass('animate');
+                            $(this).addClass('fadeInBottom');
+                            
+                            /*if its not the first one adding some delay in it*/
+                            if( index === 1){
+                                $(this).addClass('delaySmall');
+                                
+                            }else if(index === 2){
+                                $(this).addClass('delayMedium');
+                                
+                            }
+                        }
+                    });
+                    
+                    /*checking if iphone image is above the window and animating it in*/
+                    iphoneImage.each(function(index){
+                        
+                        /*bottom position of the object*/
+                        var bottomOfIphoneImage = $(this).offset().top + $(this).outerHeight();
+                        var halfIphoneImagePosition = bottomOfIphoneImage-250;
+                        
+                        console.log('bottom window: '+bottomOfWindow);
+                        console.log('bottom iphone: '+bottomOfIphoneImage);
+                        console.log('half way iphone: '+halfIphoneImagePosition);
+                        
+                        /*check if object bottom is smaller than the windows'*/
+                        if(bottomOfWindow > halfIphoneImagePosition){
+                            $(this).removeClass('hideFadeInLeft');
+                            $(this).addClass('animate');
+                            $(this).addClass('fadeInLeft');
+                        }
+                    });
+                    
+                     /*checking if each iconImage is above the screen and animating it in*/
+                    iconImage.each(function(index){
+                        
+                        /*bottom position of the object*/
+                        var bottomOfIconImage = $(this).offset().top + $(this).outerHeight();
+                        
+                        /*check if object bottom is smaller than the windows'*/
+                        if(bottomOfWindow > bottomOfIconImage){
+                            $(this).removeClass('hideFadeInRight');
+                            $(this).addClass('animate');
+                            $(this).addClass('fadeInRight');
+                            
+                        }
+                    });
+                    
+                     /*checking if each mediaHeading is above the screen and animating it in*/
+                    mediaHeading.each(function(index){
+                        
+                        /*bottom position of the object*/
+                        var bottomOfMediaHeading = $(this).offset().top + $(this).outerHeight();
+                        
+                        /*check if object bottom is smaller than the windows'*/
+                        if(bottomOfWindow > bottomOfMediaHeading){
+                            $(this).removeClass('hideFadeInRight');
+                            $(this).addClass('animate');
+                            $(this).addClass('fadeInRight');
+                            
+                        }
+                    });
+                    
+                    /*checking if each mediaParagraph is above the screen and animating it in*/
+                    mediaParagraph.each(function(index){
+                        
+                        /*bottom position of the object*/
+                        var bottomOfMediaParagraph = $(this).offset().top + $(this).outerHeight();
+                        
+                        /*check if object bottom is smaller than the windows'*/
+                        if(bottomOfWindow > bottomOfMediaParagraph){
+                            $(this).removeClass('hideFadeInRight');
+                            $(this).addClass('animate');
+                            $(this).addClass('fadeInRight');
+                            
+                        }
+                    });
+                });
+                
+            });
+        </script>
+        
         <!--  Analytics script  -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
