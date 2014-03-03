@@ -2,7 +2,7 @@
     style for the sroll top button 
 */
 .scroll-top {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 1px;
     right: 5px;

@@ -487,6 +487,8 @@ figure:hover .social-icons-container a {
     opacity: 0;
     -webkit-transition: bottom 0.4s, opacity 0.3s;
     -moz-transition: bottom 0.4s, opacity 0.3s;
+    -ms-transition: bottom 0.4s, opacity 0.3s;
+    -o-transition: bottom 0.4s, opacity 0.3s;
     transition: bottom 0.4s, opacity 0.3s;
 }
 
@@ -514,11 +516,11 @@ figure:hover .social-icons-container a {
     }
     
     .fg-image {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
     }
     
     .social-icons-container a {
