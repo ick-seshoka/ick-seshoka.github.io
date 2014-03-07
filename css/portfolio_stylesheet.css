@@ -94,9 +94,11 @@ h1.title {
 	z-index: 130;
 }
 
+/*
 img[alt="imac-ipad-iphone"] {
 	padding: 25px 0 0 90px;
 }
+*/
 
 /*
 mobile and tablet media queries
@@ -120,9 +122,11 @@ h1.title {
 	padding-bottom: 20px;
 }
 
+/*
 img[alt="imac-ipad-iphone"] {
 	padding: 50px 0;
 }
+*/
 
 }
 
