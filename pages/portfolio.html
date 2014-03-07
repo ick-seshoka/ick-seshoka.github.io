@@ -707,10 +707,6 @@
                         var bottomOfIphoneImage = $(this).offset().top + $(this).outerHeight();
                         var halfIphoneImagePosition = bottomOfIphoneImage-250;
                         
-                        console.log('bottom window: '+bottomOfWindow);
-                        console.log('bottom iphone: '+bottomOfIphoneImage);
-                        console.log('half way iphone: '+halfIphoneImagePosition);
-                        
                         /*check if object bottom is smaller than the windows'*/
                         if(bottomOfWindow > halfIphoneImagePosition){
                             $(this).removeClass('hideFadeInLeft');
