@@ -163,6 +163,9 @@ span.footer-nav-indicator {
     height: 5px;
     background: #23c1df;
     background-image: -webkit-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%);
+     background-image: -moz-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%);
+    background-image: -ms-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%);
+    background-image: -o-linear-gradient(180deg, rgb(34, 211, 245) 0%, rgb(37, 164, 189) 30%, rgb(40, 117, 132) 50%, rgb(34, 214, 249) 100%)
 }
 
 @media screen and (max-width: 991px){
